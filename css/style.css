@@ -681,8 +681,8 @@ body {
 
 /* Tema claro */
 body.white-mode {
-  background-color: white !important;
-  color: black !important;
+  background-color: white;
+  color: black;
 }
 
 body.white-mode *,
@@ -700,7 +700,7 @@ body.white-mode strong,
 body.white-mode input,
 body.white-mode textarea,
 body.white-mode button {
-  color: black !important;
+  color: black;
 }
 
 /* fundo branco */
@@ -710,11 +710,11 @@ body.white-mode .formacao-academica,
 body.white-mode .formacao-complementar,
 body.white-mode .projetos,
 body.white-mode .contato {
-  background-color: white !important;
+  background-color: white;
 }
 
 body.white-mode .overlay {
-  background-color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 body.white-mode .quadrado,
@@ -722,14 +722,14 @@ body.white-mode .card,
 body.white-mode .btn-github,
 body.white-mode .formulario-contato input,
 body.white-mode .formulario-contato textarea {
-  background-color: white !important;
-  color: black !important;
-  border-color: black !important;
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
 body.white-mode .quadrado:hover,
 body.white-mode .card:hover,
 body.white-mode .btn-github:hover {
-  background-color: #f2f2f2 !important;
-  color: black !important;
+  background-color: #f2f2f2;
+  color: black;
 }
