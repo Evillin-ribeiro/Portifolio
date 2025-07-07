@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+
+  <link rel="stylesheet" href="css/style.css"> <!-- Estilo CSS -->
+
+  <!-- Fontes das letras -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Teko:wght@300..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+
+  <!-- Para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Primeira tela -->
+  <section class="tela-inicial">
+    <div class="overlay"></div>
+
+    <div class="icones-links"> <!-- Para fazer os links -->
+      <a href="#sobre" class="quadrado">Sobre mim</a>
+      <a href="#formacao" class="quadrado">Formação Acadêmica</a>
+      <a href="#projetos" class="quadrado">Projetos</a>
+      <a href="#contato" class="quadrado">Contato</a>
+
+    </div>
+
+    <div class="logo-banner"> <!-- Colocando as iniciais ER -->
+      <span class="letra-e">E</span>
+      <span class="letra-r">R</span>
+    </div>
+
+    <button id="toggle-theme" class="theme-btn">White Mode</button> <!-- Botao para trocar a cor -->
+
+  </section>
+
+  <!-- segunda tela -->
+  <section class="habilidade" id="sobre">
+    <div class="overlay"></div>
+    <div class="container-habilidade">
+      <div class="sobre-esquerda"> <!-- Coluna a esquerda sobre mim -->
+        <div class="titulo-sobremim">
+          <span class="sobre">Sobre</span>
+          <span class="mim">mim</span>
+        </div>
+        <p>Minha jornada na tecnologia começou com uma transição corajosa da Psicologia para o universo da programação.
+        </p>
+        <p>Sou movida pelo desejo de criar soluções, resolver problemas e impactar vidas de novas formas, unindo
+          sensibilidade humana à lógica dos sistemas.</p>
+        <p>Atualmente, curso Análise e Desenvolvimento de Sistemas, onde venho me aprofundando em desenvolvimento de
+          software, análise de dados e metodologias ágeis.</p>
+        <p>Além disso, tenho investido em formações complementares voltadas para o desenvolvimento back-end, área pela
+          qual me encantei desde os primeiros códigos.</p>
+        <p>Sou curiosa, determinada e apaixonada por aprender. Acredito no poder da tecnologia quando combinada com
+          empatia e visão analítica e estou pronta para aplicar tudo isso em um ambiente que valorize colaboração,
+          crescimento e propósito.</p>
+      </div>
+
+      <div class="coluna-centro"> <!-- Coluna central habilidades-->
+        <h3>Habilidades</h3>
+        <div class="colunas">
+          <div class="coluna">
+            <h4>SOFT SKILLS</h4>
+            <p>Comunicação clara</p>
+            <p>Trabalho em equipe</p>
+            <p>Adaptabilidade</p>
+            <p>Pensamento analítico</p>
+            <p>Autodesenvolvimento</p>
+          </div>
+
+          <div class="coluna">
+            <h4>HARD SKILLS</h4>
+            <p>Java, JavaScript, Python</p>
+            <p>Git, GitHub, Jira</p>
+            <p>HTML, CSS, Bootstrap</p>
+            <p>SQL, MySQL</p>
+            <p>Scrum, Kanban</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="perfil-direita"> <!-- Para colocar ao lado direito a foto -->
+        <img src="img/perfil.jpg" alt="foto perfil">
+        <p class="nome-perfil">Evillin Ribeiro</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- terceira tela -->
+
+  <section class="formacao-academica" id="formacao">
+    <div class="overlay"></div>
+    <div class="container-formacao">
+      <div class="titulo-formacao">
+        <h1>Formação Acadêmica</h1>
+      </div>
+
+      <div class="conteudo-formacao">
+        <p class="cursando">Cursando: <strong>Análise e Desenvolvimento de Sistemas</strong></p>
+        <p class="inicio-conclusao"><i>Início: Dezembro de 2024 | Previsão de Conclusão: Junho de 2027</i></p>
+        <p class="descricao">Atualmente, estou aprofundando meus conhecimentos em tecnologia e programação, com foco no
+          desenvolvimento de sistemas e na resolução de desafios. Tenho desenvolvido habilidades avançadas em análise de
+          sistemas, design de software, banco de dados e integração de sistemas. Capacitando-me a criar soluções
+          eficientes e escaláveis para uma variedade de problemas complexos.</p>
+
+        <p class="graduacao">Graduação: <strong>Psicologia</strong></p>
+        <p class="conclusao"><i>Conclusão: Janeiro de 2022</i></p>
+        <p class="descricao">A Psicologia me proporcionou uma visão humanística e estratégica, além de desenvolver
+          minhas habilidades de comunicação e empatia, que são essenciais para trabalhar em equipe e entender as
+          necessidades dos usuários em qualquer área tecnológica.</p>
+      </div>
+    </div>
+
+    <section class="formacao-complementar">
+      <div class="container-formacao-complementar">
+
+        <!-- Imagem no centro -->
+        <div class="imagem-centralizada">
+          <img src="/img/img.04.png" alt="Imagem de cursos">
+        </div>
+
+        <!-- Texto à direita -->
+        <div class="conteudo-cursos">
+          <div class="container-cursos">
+            <div class="formacao-direita">
+              <h2>Formação Complementar e Cursos</h2>
+            </div>
+
+            <h3 class="subtitulo-italico">Desenvolvimento em Java & Programação Orientada a Objetos</h3>
+            <div class="bloco-curso">
+              <p><strong>Java Completo:</strong> Programação Orientada a Objetos + Projetos — Udemy, por Nélio Alves</p>
+              <p>Formação intensiva em Java com foco em POO, estruturas de dados, desenvolvimento de projetos práticos e
+                aplicação de conceitos de engenharia de software.</p>
+            </div>
+
+            <div class="bloco-curso">
+              <p><strong>Java para Iniciantes — Curso em Vídeo (YouTube)</strong></p>
+              <p>Introdução à linguagem Java, abordando desde lógica básica até estruturas de controle e manipulação de
+                dados.</p>
+            </div>
+
+            <div class="bloco-curso">
+              <p><strong>Curso de Java POO (Programação Orientada a Objetos) — Curso em Vídeo (YouTube)</strong></p>
+              <p>Fundamentos sólidos de POO com foco em boas práticas de desenvolvimento utilizando Java.</p>
+            </div>
+
+            <h3 class="subtitulo-italico">Tecnologia e Gestão de Pessoas</h3>
+            <div class="bloco-curso">
+              <p><strong>Tech Recruiter — Recursos Humanos</strong></p>
+              <p>Visão estratégica do recrutamento técnico, com foco na identificação de perfis de tecnologia,
+                habilidades interpessoais e cultura organizacional.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+  </section>
+
+  <!--quarta tela cards -->
+  <section class="projetos" id="projetos">
+    <div class="overlay"></div>
+    <div class="conteudo-projetos">
+      <h4>Projetos</h4>
+
+      <div class="cards-projetos">
+        <div class="card">
+          <h3>NLW - Fullstack</h3>
+          <p>Projeto desenvolvido como parte de uma imersão promovida pela Rocketseat, com o objetivo de aprofundar
+            conhecimentos em desenvolvimento web.</p>
+          <p>Ao longo da experiência, pude evoluir minhas habilidades em HTML, CSS e JavaScript, aplicando conceitos na
+            prática e desenvolvendo uma aplicação completa do zero.</p>
+          <a href="https://github.com/Evillin-ribeiro/NLW-full-stack.git" target="_blank" class="btn-github">Ver no
+            GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>Sistema de Gerenciamento de Livros</h3>
+          <p>Projeto desenvolvido como parte de um desafio simulado, com foco na criação de um software funcional para
+            gerenciamento de livros.</p>
+          <a href="https://github.com/Evillin-ribeiro/Gerenciamento-de-livros.git" target="_blank"
+            class="btn-github">Ver no GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>Sistema de Cobrança</h3>
+          <p>Este projeto simula a contratação para desenvolver um sistema de cobrança de serviços para uma copiadora.
+          </p>
+          <a href="https://github.com/Evillin-ribeiro/Sistema-de-cobran-a.git" target="_blank" class="btn-github">Ver no
+            GitHub</a>
+        </div>
+
+        <div class="card">
+          <h3>App de Vendas</h3>
+          <p>O projeto foi pensado para proporcionar uma experiência prática e eficiente para a escolha e retirada de
+            itens.</p>
+          <a href="https://github.com/Evillin-ribeiro/Aplicativo-de-vendas.git" target="_blank" class="btn-github">Ver
+            no GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- quinta tela -->
+  <section class="contato" id="contato">
+    <div class="overlay"></div>
+    <div class="container-contato">
+
+      <div class="formulario-contato"> <!-- formulario -->
+        <h3>Olá, mundo. Envie a sua mensagem:</h3>
+        <form action="https://formsubmit.co/evillin_ribeiro@hotmail.com" method="POST">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+
+          <button type="submit">Enviar</button>
+
+          <!-- Impedindo spam -->
+          <input type="hidden" name="_captcha" value="false">
+
+        </form>
+      </div>
+
+
+      <div class="informacoes-contato"> <!-- icons-->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/evillin-ribeiro/" class="social-icon linkedin" target="_blank"
+            rel="external">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://wa.me/5519988564113" class="social-icon whatsapp" target="_blank" rel="external">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="https://github.com/Evillin-ribeiro" class="social-icon github" target="_blank" rel="external">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:evillin_ribeiro@hotmail.com" class="social-icon email" target="_blank" rel="external">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="imagem-contato"> <!-- foto a direita -->
+        <img src="img/img.03.png" alt="Imagem dev" class="imagem-dev">
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <script src="proj.js"></script> <!-- js-->
+</body>
+
+</html>

@@ -1,0 +1,735 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* tela de fundo */
+.tela-inicial {
+  position: relative;
+  background-image: url("../img/img.01.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Camada escura sobre a imagem */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Texto lado esquerdo */
+.texto-banner {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  z-index: 2;
+}
+
+
+/* icons esquerdo */
+.icones-links {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+  z-index: 10;
+}
+
+/* icons com borda branca e texto branco */
+.quadrado {
+  width: 160px;
+  height: 90px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  font-family: 'Saira Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.2s, background-color 0.3s ease;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.quadrado:hover {
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Lertras ER */
+.logo-banner {
+  position: absolute;
+  /* NÃO é fixo na tela */
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
+/* Fonte personalizada */
+.letra-e,
+.letra-r {
+  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-size: 300px;
+  font-weight: 400;
+  color: #f7f7f7;
+  display: inline-block;
+  line-height: 1;
+}
+
+/* Aproxima as letras */
+.letra-e {
+  margin-right: -25px;
+}
+
+/* segunda tela */
+.sobremim {
+  position: relative;
+  background-color: black;
+  /* fundo preto */
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: white;
+  padding: 40px;
+  text-align: left;
+  /* texto à esquerda */
+  z-index: 0;
+  font-family: "Lora", serif;
+}
+
+.titulo-sobremim {
+  margin-top: 70px;
+  line-height: 1;
+  margin-bottom: 40px;
+  /* ajustando o espaco entre o titulo e o texto */
+  margin-left: 90px;
+}
+
+.titulo-sobremim .sobre {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 110px;
+  color: white;
+  line-height: 0.8;
+  display: block;
+  margin-bottom: -40px;
+  /* puxar o mim mais para cima */
+}
+
+.titulo-sobremim .mim {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 100px;
+  color: white;
+  display: block;
+  margin-left: 140px;
+}
+
+/* lado esquerdo - sobre mim */
+.sobre-esquerda {
+  width: 23%;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: left;
+}
+
+.sobremim .bio p {
+  font-family: "Lora", serif;
+}
+
+.conteudo-sobre {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.conteudo-sobre h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.conteudo-sobre p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+/* no centro - habilidades */
+.habilidade {
+  background-color: black;
+  color: white;
+  font-family: "Lora", serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.container-habilidade {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 40px;
+}
+
+.habilidade .sobre-esquerda p {
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.coluna-centro {
+  width: 34%;
+  text-align: center;
+}
+
+.coluna-centro h3 {
+  margin-top: 90px;
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 100px;
+  /* tamanho da letra */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.colunas {
+  display: flex;
+  justify-content: center;
+  /* centralizado */
+  gap: 270px;
+  /* espaçamento entre o hard e o soft */
+}
+
+.coluna {
+  text-align: left;
+  /* alinhar os textos */
+}
+
+.coluna h4 {
+  font-family: "Lora", serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 100px;
+}
+
+.coluna p {
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1;
+  color: white;
+}
+
+/* lado direito foto perfil */
+.perfil-direita {
+  width: 25%;
+  text-align: center;
+}
+
+.perfil-direita img {
+  width: 500px;
+  /* aumenta a foto */
+  height: 500px;
+  margin-top: 180px;
+  object-fit: cover;
+}
+
+.nome-perfil {
+  font-size: 60px;
+  color: white;
+  font-family: 'Reenie Beanie', cursive;
+  margin-top: 0px;
+}
+
+.formacao-academica {
+  position: relative;
+  background-color: #000;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+  font-family: "Lora", serif;
+}
+
+.formacao-academica .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: none;
+}
+
+/* título da página - formacao academica */
+.titulo-formacao {
+  position: absolute;
+  top: 0%;
+  left: 4%;
+  z-index: 2;
+  font-size: 3.2rem;
+  font-family: 'Reenie Beanie', cursive;
+  color: #d0d0d0;
+}
+
+/* centralizar o conteúdo */
+.conteudo-formacao {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  z-index: 2;
+  max-width: 550px;
+  color: #d0d0d0;
+}
+
+.conteudo-formacao p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.cursando,
+.graduacao {
+  font-weight: bold;
+}
+
+.graduacao {
+  margin-top: 140px;
+}
+
+.inicio-conclusao,
+.conclusao {
+  font-style: italic;
+}
+
+.descricao {
+  font-size: 1rem;
+}
+
+.formacao-complementar {
+  background-color: #000;
+  color: #d0d0d0;
+  font-family: "Lora", serif;
+  padding: 60px 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-formacao-complementar {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.imagem-centralizada {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+}
+
+.imagem-centralizada img {
+  max-width: 35%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  margin-left: 500px;
+
+}
+
+.conteudo-cursos {
+  flex: 2;
+  max-width: 700px;
+}
+
+.titulo-formacao {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2.4rem;
+  position: absolute;
+  margin-right: 0%;
+  top: 0%;
+  left: 5%;
+}
+
+.formacao-direita {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2.4rem;
+  position: absolute;
+  margin-right: 0%;
+  top: 0%;
+  right: 5%;
+}
+
+.subtitulo-italico {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin-top: 120px;
+  /* aumenta a distância do h2 */
+  margin-bottom: 2rem;
+}
+
+.bloco-curso {
+  margin-bottom: 1.5rem;
+}
+
+.bloco-curso p {
+  line-height: 1.2;
+  font-size: 1.05rem;
+}
+
+.conteudo-projetos h4 {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 90px;
+  color: #d0d0d0;
+  text-align: center;
+  margin-top: 40;
+  margin-bottom: 40px;
+}
+
+.projetos {
+  position: relative;
+  background-image: url("../img/img.01.png");
+  background-size: 100% auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* diminui a altura da seção */
+  padding-top: 20px;
+  padding-bottom: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.projetos .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.conteudo-projetos {
+  position: relative;
+  z-index: 3;
+}
+
+.cards-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 110px;
+  /* aumenta o espacamento dos cards */
+  justify-content: center;
+  margin-top: 60px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 2px solid white;
+  border-radius: 12px;
+  padding: 50px;
+  width: 350px;
+  color: white;
+  text-align: left;
+  font-family: 'Lora', serif;
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+
+}
+
+.card p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.btn-github {
+  display: inline-block;
+  padding: 8px 14px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-github:hover {
+  background-color: white;
+  color: black;
+}
+
+/* pagina contato */
+.contato {
+  min-height: 100vh;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background-color: black;
+  color: white;
+  position: relative;
+  text-align: center;
+  font-family: 'Lora', serif;
+}
+
+.contato .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 40px 60px;
+  position: relative;
+  z-index: 2;
+  flex-wrap: wrap;
+}
+
+/* formulario lado esquedo */
+.formulario-contato {
+  flex: 1;
+  max-width: 550px;
+  padding-left: 90px;
+  padding-top: 130px;
+}
+
+.formulario-contato h3 {
+  font-size: 1.9rem;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 0;
+}
+
+.formulario-contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.formulario-contato label {
+  font-size: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #d8cdcd;
+  border-radius: 6px;
+  width: 95%;
+  background-color: #1b1b1b;
+  color: white;
+}
+
+.formulario-contato button {
+  background-color: #34637c;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.formulario-contato button:hover {
+  background-color: #005c8c;
+}
+
+
+.informacoes-contato {
+  flex: 1;
+  text-align: left;
+  margin-top: 770px;
+  margin-left: 430px;
+
+}
+
+/* icons redes */
+.social-links {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20x;
+}
+
+.social-icon {
+  background-color: #0576b3;
+  color: white;
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  margin-right: 0;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.github {
+  background-color: #333;
+}
+
+.email {
+  background-color: #ea4335;
+}
+
+/* imagem a direita */
+.imagem-dev {
+  float: right;
+  /* deixa a direita */
+  margin-left: 50px;
+  margin-top: 100px;
+  max-width: 700px;
+  /* tamanho */
+}
+
+.imagem-dev img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* botao na tela incial */
+.theme-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-family: 'Saira Condensed', sans-serif;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+  background-color: #ddd;
+}
+
+/* Tema claro */
+body.white-mode {
+  background-color: white !important;
+  color: black !important;
+}
+
+body.white-mode *,
+body.white-mode h1,
+body.white-mode h2,
+body.white-mode h3,
+body.white-mode h4,
+body.white-mode h5,
+body.white-mode h6,
+body.white-mode p,
+body.white-mode a,
+body.white-mode span,
+body.white-mode label,
+body.white-mode strong,
+body.white-mode input,
+body.white-mode textarea,
+body.white-mode button {
+  color: black !important;
+}
+
+/* fundo branco */
+body.white-mode .tela-inicial,
+body.white-mode .habilidade,
+body.white-mode .formacao-academica,
+body.white-mode .formacao-complementar,
+body.white-mode .projetos,
+body.white-mode .contato {
+  background-color: white !important;
+}
+
+body.white-mode .overlay {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body.white-mode .quadrado,
+body.white-mode .card,
+body.white-mode .btn-github,
+body.white-mode .formulario-contato input,
+body.white-mode .formulario-contato textarea {
+  background-color: white !important;
+  color: black !important;
+  border-color: black !important;
+}
+
+body.white-mode .quadrado:hover,
+body.white-mode .card:hover,
+body.white-mode .btn-github:hover {
+  background-color: #f2f2f2 !important;
+  color: black !important;
+}
